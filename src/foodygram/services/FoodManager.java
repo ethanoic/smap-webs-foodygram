@@ -1,5 +1,5 @@
 package foodygram.services;
 
-public class UserService {
-	
+public class FoodManager {
+
 }

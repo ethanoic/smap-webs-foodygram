@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
 @Path("foods")
-public class Foods {
+public class FoodsService {
 	
 	@GET
 	public Response GetPhotos() {
