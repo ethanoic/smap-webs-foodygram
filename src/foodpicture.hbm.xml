@@ -4,15 +4,15 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-  <class name="foodygram.entities.foodpicture" table="foodpictures">  
-    <id name="id">  
+  <class name="foodygram.entities.FoodPicure" table="foodpictures">  
+    <id name="Id">  
      <generator class="assigned"></generator>  
     </id>  
             
-    <property name="image"></property>  
-    <property name="datetaken"></property>  
-    <property name="userid"></property>
-    <property name="foodname"></property>
+    <property name="Image"></property>  
+    <property name="DateTaken"></property>  
+    <property name="UserId"></property>
+    <property name="FoodName"></property>
             
   </class>  
             

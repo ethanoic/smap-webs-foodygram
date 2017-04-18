@@ -4,16 +4,16 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-  <class name="foodygram.entities.user" table="users">  
-    <id name="id">  
+  <class name="foodygram.entities.User" table="users">  
+    <id name="Id">  
      <generator class="assigned"></generator>  
     </id>  
             
-    <property name="firstName"></property>  
-    <property name="lastName"></property>  
-    <property name="email"></property>  
-    <property name="mobileno"></property>
-    <property name="datejoined"></property>  
+    <property name="FirstName"></property>  
+    <property name="LastName"></property>  
+    <property name="Email"></property>  
+    <property name="MobileNo"></property>
+    <property name="DateJoined"></property>  
             
   </class>  
             

@@ -6,11 +6,42 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;  
 import javax.persistence.Table;  
 
-@Entity
-@Table(name="users")
+@Entity(name="User")
 public class User {
+	
+	public User() {
+		
+	}
+	
+	public User(
+			int id,
+			String firstName, 
+			String lastName,
+			String email,
+			String mobileNo,
+			Date dateJoined) {
+		Id = id;
+		FirstName = firstName;
+		LastName = lastName;
+		Email = email;
+		MobileNo = Email;
+		DateJoined = DateJoined;
+	}
+	
+	public User(
+			String firstName, 
+			String lastName,
+			String email,
+			String mobileNo,
+			Date dateJoined) {
+		FirstName = firstName;
+		LastName = lastName;
+		Email = email;
+		MobileNo = Email;
+		DateJoined = DateJoined;
+	}
+	
 	@Id
-	@GeneratedValue
 	public int Id;
 	
 	public String FirstName;

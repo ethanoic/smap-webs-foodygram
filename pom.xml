@@ -51,16 +51,18 @@
   		<artifactId>jersey-core</artifactId>
   		<version>1.19</version>
   	</dependency>
-  	<dependency>
-	   <groupId>org.hibernate</groupId>
-	   <artifactId>hibernate-core</artifactId>
-	   <version>5.2.10.Final</version>
-	</dependency>
-	<dependency>
-	  <groupId>org.hibernate</groupId>
-	  <artifactId>hibernate-jpamodelgen</artifactId>
-	  <version>5.2.10.Final</version>
-	</dependency>
+    <!-- MySQL connector -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>6.0.5</version>
+    </dependency>
+    <!-- Hibernate 5.2.6 Final -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.2.6.Final</version>
+    </dependency>
 	<dependency>
 	    <groupId>com.google.cloud</groupId>
 	    <artifactId>google-cloud-vision</artifactId>

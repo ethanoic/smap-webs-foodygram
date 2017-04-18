@@ -6,11 +6,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;  
 import javax.persistence.Table;  
 
-@Entity
-@Table(name="foodpictures")
+@Entity(name="FoodPicture")
 public class FoodPicture {
+	
+	public FoodPicture() {
+		
+	}
+	
 	@Id
-	@GeneratedValue
 	public int Id;
 	public String Image;
 	public Date DateTaken;

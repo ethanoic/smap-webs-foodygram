@@ -18,6 +18,7 @@ public class FoodsService {
 		return Response.ok().build();
 	}
 	
+	/*
 	@POST
 	public Response PostPhoto() {
 		
@@ -41,5 +42,5 @@ public class FoodsService {
 		
 		return Response.ok().build();
 	}
-
+	*/
 }
