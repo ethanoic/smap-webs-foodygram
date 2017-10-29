@@ -1,12 +1,7 @@
 package foodygram.entities;
 
 import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;  
-import javax.persistence.Table;  
 
-@Entity(name="User")
 public class User {
 	
 	public User() {
@@ -41,7 +36,6 @@ public class User {
 		DateJoined = DateJoined;
 	}
 	
-	@Id
 	public int Id;
 	
 	public String FirstName;

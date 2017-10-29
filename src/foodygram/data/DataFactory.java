@@ -7,8 +7,10 @@ public class DataFactory {
 		if (userStore == null) {
 			if (storeType == foodygram.data.mock.UserStore.class)
 				userStore = new foodygram.data.mock.UserStore();
+			/*
 			if (storeType == foodygram.data.UserStore.class)
 				userStore = new foodygram.data.UserStore();
+			*/
 		}
 		
 		return userStore;

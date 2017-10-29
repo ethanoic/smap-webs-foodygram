@@ -39,11 +39,13 @@ public class UserStore implements IUserStore {
 	@Override
 	public List<User> Search(String term) throws Exception {
 		
-		List<User> result = usersList.stream()
-			.filter(t -> t.FirstName.contains(term) || t.LastName.contains(term))
-			.collect(Collectors.toList());
-		
-		return result;
+		List<User> matchingUsers = new ArrayList<User>();
+		for(int i = 0; i < usersList.size(); i++ ) {
+			if (usersList.get(i).FirstName.contains(term) || usersList.get(i).LastName.contains(term)) {
+				matchingUsers.add(usersList.get(i));
+			}
+		}
+		return matchingUsers;
 	}
 
 	@Override
@@ -78,7 +80,6 @@ public class UserStore implements IUserStore {
 
 	@Override
 	public void DeleteUser(int id) throws Exception {
-		// TODO Auto-generated method stub
 		List<User> users = new ArrayList<User>();
 		usersList.forEach(item->{
 			if (item.Id == id) {
